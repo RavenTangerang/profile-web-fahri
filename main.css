@@ -1,0 +1,84 @@
+body {
+  background-color: #ac9a9a;
+}
+
+.container {
+  text-align: center;
+}
+
+.center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.image {
+  border-radius: 50%;
+  border: 11px solid rgba(120, 120, 84, 0.647);
+  width: 200px;
+  height: 200px;
+  margin: 10px 30px;
+  animation: spin 2s;
+  
+  
+}
+
+.heading {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin-top: 20px;
+}
+
+.description {
+  justify-content: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: 20px;
+}
+
+.circles {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.circle {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  margin: 20px;
+  border-radius: 50%;
+  background-color: #4e92a1;
+  color: rgb(217, 207, 207);
+  font-size: 48px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.2s ease-in-out;
+}
+
+.circle:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.circle:hover span {
+  transform: scale(1.3);
+}
+
+.circle span {
+  position: absolute;
+  transition: all 0.2s ease-in-out;
+}
+
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
